@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Penerjemah SIBI Real-Time</title>
+    
+    <script src="{{ url_for('static', filename='js/mediapipe_vision.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>Sistem Penerjemah SIBI Real-Time</h1>
+    <div id="status" class="status-badge loading">Memuat Model Hand Landmarker...</div>
+
+    <div class="video-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="output_canvas"></canvas>
+    </div>
+
+    <div class="result-box">
+        <div class="sequence-title">Rangkaian Suku Kata Terdeteksi (Input RNN)</div>
+        <div id="list-suku-kata" class="sequence-display">-</div>
+        
+        <div class="final-title">Hasil Penerjemahan Kata Dasar SIBI</div>
+        <div id="kata-hasil" class="final-word">...</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
