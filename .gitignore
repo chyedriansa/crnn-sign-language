@@ -1,0 +1,9 @@
+// ignore the following files and directories
+1_dataset_rnn/
+1_raw_dataset/
+2_processed_dataset/
+3_final_dataset/
+hasil_data_preparation/
+hasil_modelling/
+hasil_modelling_rnn/
+env/
